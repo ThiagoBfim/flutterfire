@@ -16,8 +16,9 @@ import java.util.Map;
 class AdRequestBuilderFactory {
 
   private static final String TAG = "flutter";
+  @SuppressWarnings("unchecked")
   private final Map<String, Object> targetingInfo;
-
+  @SuppressWarnings("unchecked")
   AdRequestBuilderFactory(Map<String, Object> targetingInfo) {
     this.targetingInfo = targetingInfo;
   }
