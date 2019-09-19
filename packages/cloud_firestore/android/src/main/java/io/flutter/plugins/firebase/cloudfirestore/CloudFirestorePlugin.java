@@ -800,8 +800,8 @@ public class CloudFirestorePlugin implements MethodCallHandler {
           }
 
           if (arguments.get("timestampsInSnapshotsEnabled") != null) {
-            builder.setTimestampsInSnapshotsEnabled(
-                (boolean) arguments.get("timestampsInSnapshotsEnabled"));
+//            builder.setTimestampsInSnapshotsEnabled(
+//                (boolean) arguments.get("timestampsInSnapshotsEnabled"));
           }
 
           if (arguments.get("cacheSizeBytes") != null) {
