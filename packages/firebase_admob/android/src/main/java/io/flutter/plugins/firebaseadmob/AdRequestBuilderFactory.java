@@ -12,13 +12,11 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 import java.util.Map;
-
+@SuppressWarnings("unchecked")
 class AdRequestBuilderFactory {
 
   private static final String TAG = "flutter";
-  @SuppressWarnings("unchecked")
   private final Map<String, Object> targetingInfo;
-  @SuppressWarnings("unchecked")
   AdRequestBuilderFactory(Map<String, Object> targetingInfo) {
     this.targetingInfo = targetingInfo;
   }
