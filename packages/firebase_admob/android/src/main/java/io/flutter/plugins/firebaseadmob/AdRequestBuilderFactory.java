@@ -89,7 +89,7 @@ class AdRequestBuilderFactory {
     if (birthday != null) {
       if (!(birthday instanceof Long))
         Log.w(TAG, "targetingInfo birthday: expected a long integer");
-      else builder.setBirthday(new Date((Long) birthday));
+//      else builder.setBirthday(new Date((Long) birthday));
     }
 
     Integer gender = getTargetingInfoInteger("gender", targetingInfo.get("gender"));
@@ -98,7 +98,7 @@ class AdRequestBuilderFactory {
         case 0: // MobileAdGender.unknown
         case 1: // MobileAdGender.male
         case 2: // MobileAdGender.female
-          builder.setGender(gender);
+//          builder.setGender(gender);
           break;
         default:
           Log.w(TAG, "targetingInfo gender: invalid value");
@@ -107,11 +107,11 @@ class AdRequestBuilderFactory {
 
     Boolean designedForFamilies =
         getTargetingInfoBoolean("designedForFamilies", targetingInfo.get("designedForFamilies"));
-    if (designedForFamilies != null) builder.setIsDesignedForFamilies(designedForFamilies);
+//    if (designedForFamilies != null) builder.setIsDesignedForFamilies(designedForFamilies);
 
     Boolean childDirected =
         getTargetingInfoBoolean("childDirected", targetingInfo.get("childDirected"));
-    if (childDirected != null) builder.tagForChildDirectedTreatment(childDirected);
+//    if (childDirected != null) builder.tagForChildDirectedTreatment(childDirected);
 
     String requestAgent = getTargetingInfoString("requestAgent", targetingInfo.get("requestAgent"));
     if (requestAgent != null) builder.setRequestAgent(requestAgent);
